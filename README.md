@@ -6,10 +6,6 @@ Provides first-class support for running Spring / Spring Boot applications as cl
 * BlueMix OpenWhisk
 
 
-## FAQ:
-Why is this project not called "Spring Cloud Lambda", or part of the "Spring Cloud AWS" project?
-AWS Lambda is certainly the origin of the current trend toward serverless architectures.  However it has been quickly followed, and in some cases surpassed, by the capabilities offered by competitors.  This project aims to include more than just support for AWS Lambda.
-
 ## Appropriate platform
 The reader may wonder if it is appropriate to run a (relatively) heavy Spring ApplicationContext within a cloud function - after all, Spring was definitely not designed with the server less revolution in mind.  Cloud functions are designed to be essentially stateless and event driven, and the Spring ApplicationContext is definitely stateful.
 
@@ -58,6 +54,10 @@ Timeout - As noted earlier, the Lambda function will load the Spring ApplictionC
 # Google Cloud Functions
 
 # OpenWhisk
+
+## FAQ:
+Why is this project not called "Spring Cloud Lambda", or part of the "Spring Cloud AWS" project?
+AWS Lambda is certainly the origin of the current trend toward serverless architectures.  However it has been quickly followed, and in some cases surpassed, by the capabilities offered by competitors.  This project aims to include more than just support for AWS Lambda.
 
 
 
