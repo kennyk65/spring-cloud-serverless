@@ -34,6 +34,15 @@ Main @Configuration Class:  Next, since the code that actually instantiates the 
 
 @CloudFunction method:  Finally, use @CloudFunction to indicate the method to be called on the @Handler bean when the cloud function executes.  Your @Handler bean can have only one @CloudFunction method.
 
+    @Handler
+    public class Demo {
+
+    	@CloudFunction
+    	public Object handle(Object o, Context context) {
+    		return "Hello World";
+    	}
+    }
+
 # @CloudFunction Method Parameters:
 In the spirit of Spring MVC @RequestMapping method parameters, the signature to your @CloudFunction can vary quite a bit.  
 A POJO would be instantiated and populated by the incoming JSON.
